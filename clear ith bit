@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int clearithbit(int n,int pos)
+{
+	int temp=~(1<<pos);
+	n=n&temp;
+}
+int main()
+{
+	int n;
+	cin>>n;
+	int pos;
+	cin>>pos;
+	clearithbit(n,pos);
+	cout<<n;
+}
