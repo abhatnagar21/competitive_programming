@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+bool getbit(int n,int pos)
+{
+	int temp=1<<pos;
+	return (n&temp);
+}
+int main()
+{
+	int n;
+	cin>>n;
+	int pos;
+	cin>>pos;
+	cout<<getbit(n,pos);
+}
