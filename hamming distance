@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int ham(int n,int m)
+{
+	int count=0;
+	int y=n^m;
+	while(y>0)
+	{
+		int last=y&1;
+		if(last==1) count++;
+		y=y>>1;
+	}
+	return count;
+}
+int main()
+{
+	int n;
+	cin>>n;
+	int m;
+	cin>>m;
+	cout<<ham(n,m);
+}
