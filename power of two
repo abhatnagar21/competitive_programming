@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+bool power(int n)
+{
+	
+	for(int i=0;i<100;i++)
+	{
+		int y=1<<i;
+		if(y==n) 
+		{
+		cout<<"true";
+		return 0;
+	}
+	}
+	cout<<"false";1
+}
+int main()
+{
+	int x;
+	cin>>x;
+	power(x);
+}
