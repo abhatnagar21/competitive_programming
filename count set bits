@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int countsetbits(int n)
+{
+	int count=0;
+	int lastbit;
+	while(n>0)
+	{
+	
+	lastbit=n&1;
+	count+=lastbit;
+	n=n>>1;
+}
+return count;
+}
+int main()
+{
+	int n;
+	cin>>n;
+	cout<<countsetbits(n);
+}
