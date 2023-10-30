@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int ans=0;
+	int n;
+	cin>>n;
+	int m;
+	cin>>m;
+	int x=min(n,m);
+	for(int i=1;i<=x;i++){
+	
+		if(n%i==0 && m%i==0)
+		if(i>ans) ans=i;
+		
+		
+	}
+	cout<<ans;
+}
