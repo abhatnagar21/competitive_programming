@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int stairs(int k,int n)
+{
+    if(n==0)return 1;
+    if(n<0)return 0;
+    int ans=0;
+    for(int jumps=0;jumps<=n;jumps++)
+    {
+        ans+=stairs(k-jumps,n);
+    }
+    return 0;
+}
+int main()
+{
+    int k,n;
+    cin>>k>>n;
+    cout<<stairs(n,k);
+}
